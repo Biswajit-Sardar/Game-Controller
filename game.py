@@ -23,3 +23,15 @@ while True:
         finger=detector.fingersUp(hand[0])  # Get the status of each finger (up or down)
         print(finger)
 
+
+
+        if finger==[1,1,1,1,1]:                           
+            keyboard.press(Key.right)
+            keyboard.release(Key.left)
+        elif finger==[0,0,0,0,0]:
+            keyboard.press(Key.left)
+            keyboard.release(Key.right)
+        elif finger==[1,0,0,0,0]:
+            keyboard.press(Key.space)
+            keyboard.release(Key.space)
+        
