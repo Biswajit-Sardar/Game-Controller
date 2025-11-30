@@ -35,3 +35,21 @@ while True:
             keyboard.press(Key.space)
             keyboard.release(Key.space)
         
+
+    else:
+        keyboard.release(Key.left)
+        keyboard.release(Key.right)
+
+
+
+
+
+
+
+
+
+
+    cv2.imshow("Image",img)  # Display the image in a window named "Image"
+    cv2.waitKey(1)  #wait 1 mili second
+    if cv2.waitKey(1)== ord("q"):  # If the 'q' key is pressed so remove the camera
+        break
